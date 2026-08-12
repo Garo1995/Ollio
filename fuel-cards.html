@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>Ollio</title>
+</head>
+<body>
+
+<section class="personal-area d-flex">
+    <div id="sidebarOffcanvas" class="personal-menu offcanvas offcanvas-start" tabindex="-1">
+        <div class="menu-cnt">
+            <div class="menu-cnt-flex d-flex align-items-center justify-content-between">
+                <a href="#" class="logo-menu">
+                    <img src="./assets/img/logo.svg" class="logo-light" alt="Ollio">
+                    <img src="./assets/img/logo-dark.svg" class="logo-dark" alt="Ollio">
+                </a>
+                <span class="click-menu">
+                    <img src="./assets/img/switch-on.svg" class="icon-switch-on" alt="switch">
+                    <img src="./assets/img/switch-off.svg" class="icon-switch-off" alt="switch">
+                </span>
+                <div class="close-mob-menu" data-bs-dismiss="offcanvas">
+                    <i class="icon icon-x-close"></i>
+                </div>
+            </div>
+            <div class="menu-href">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <i class="icon home-line"></i>
+                            <span>Обзор</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sales.html">
+                            <i class="icon wallet"></i>
+                            <span>Продажи</span>
+                        </a>
+                    </li>
+                    <li class="nav-item menu-active">
+                        <a class="nav-link" href="./fuel-cards.html">
+                            <i class="icon fuel-cards"></i>
+                            <span>Топливные карты</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./card-groups.html">
+                            <i class="icon card-groups"></i>
+                            <span>Группы карт</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./payments.html">
+                            <i class="icon payments"></i>
+                            <span>Оплаты</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./users.html">
+                            <i class="icon users"></i>
+                            <span>Пользователи</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="personal-menu-items">
+            <div class="card-account dropdown">
+                <button type="button" class="card-account-toggle btn d-flex align-items-start justify-content-between w-100"
+                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <div class="card-account-flex d-flex align-items-center">
+                        <div class="card-account-user d-flex">
+                            <img src="./assets/img/user.png" alt="user">
+                            <span class="active-light"></span>
+                        </div>
+                        <div class="account-user-name d-flex flex-column">
+                            <span>Жанна Самолетова</span>
+                            <small>Ваш менеджер</small>
+                        </div>
+                    </div>
+                    <span class="card-account-open">
+                        <i class="icon chevron-selector"></i>
+                    </span>
+                </button>
+
+                <div class="card-account-mod dropdown-menu">
+                    <div class="manager-contacts-fon">
+                        <div class="manager-contacts">
+                            <h3>Контакты менеджера</h3>
+                        </div>
+                        <div class="manager-contacts-flex d-flex align-items-start justify-content-between">
+                            <div class="manager-contacts-href d-flex flex-column">
+                                <a href="mailto:olivia@untitledui.com">
+                                    <i class="icon icon-mail"></i>
+                                    <span>olivia@untitledui.com</span>
+                                </a>
+                                <a href="tel:8 800 999 99 99">
+                                    <i class="icon icon-call"></i>
+                                    <span>8 800 999 99 99</span>
+                                </a>
+                            </div>
+                            <div class="contacts-copy">
+                                <i class="icon icon-copy"></i>
+                            </div>
+                        </div>
+                        <div class="contract-number-flex d-flex align-items-start justify-content-between">
+                            <div class="manager-contacts-href d-flex align-items-start">
+                                <a href="mailto:olivia@untitledui.com">
+                                    <i class="icon icon-file"></i>
+                                    <div class="contract-number d-flex flex-column">
+                                        <span>1232343545545</span>
+                                        <small>Номер договора</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="contacts-copy">
+                                <i class="icon icon-copy"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exit-profile-name">
+                        <div class="exit-profile d-flex align-items-center">
+                            <i class="icon icon-log-out"></i>
+                            <span>Выход</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="theme-toggle" class="light-dark d-flex align-items-center justify-content-between">
+                <div class="click-light ">
+                    <span>Light</span>
+                    <i class="icon icon-light"></i>
+                </div>
+                <div class="click-dark">
+                    <span>Dark</span>
+                    <i class="icon icon-dark"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal-main">
+        <div class="head-menu">
+            <a href="#" class="logo-menu-mob d-flex">
+                <img src="./assets/img/logo.svg" class="logo-light" alt="Ollio">
+                <img src="./assets/img/logo-dark.svg" class="logo-dark" alt="Ollio">
+            </a>
+            <button type="button" class="open-menu btn" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">
+                <i class="icon icon-menu"></i>
+            </button>
+        </div>
+        <div class="container-fluid px-0">
+        <div class="personal-title d-flex align-items-center justify-content-between">
+            <h1>Топливные карты</h1>
+            <div class="card-account dropdown">
+                <button type="button" class="card-account-toggle btn d-flex align-items-start justify-content-between w-100"
+                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <div class="card-account-flex d-flex align-items-center">
+                        <div class="card-account-user d-flex">
+                            <img src="./assets/img/user.png" alt="user">
+                            <span class="active-light"></span>
+                        </div>
+                        <div class="account-user-name d-flex flex-column">
+                            <span>Жанна Самолетова</span>
+                            <small>Ваш менеджер</small>
+                        </div>
+                    </div>
+                    <span class="card-account-open">
+                        <i class="icon chevron-selector"></i>
+                    </span>
+                </button>
+
+                <div class="card-account-mod dropdown-menu">
+                    <div class="manager-contacts-fon">
+                        <div class="manager-contacts">
+                            <h3>Контакты менеджера</h3>
+                        </div>
+                        <div class="manager-contacts-flex d-flex align-items-start justify-content-between">
+                            <div class="manager-contacts-href d-flex flex-column">
+                                <a href="mailto:olivia@untitledui.com">
+                                    <i class="icon icon-mail"></i>
+                                    <span>olivia@untitledui.com</span>
+                                </a>
+                                <a href="tel:8 800 999 99 99">
+                                    <i class="icon icon-call"></i>
+                                    <span>8 800 999 99 99</span>
+                                </a>
+                            </div>
+                            <div class="contacts-copy">
+                                <i class="icon icon-copy"></i>
+                            </div>
+                        </div>
+                        <div class="contract-number-flex d-flex align-items-start justify-content-between">
+                            <div class="manager-contacts-href d-flex align-items-start">
+                                <a href="mailto:olivia@untitledui.com">
+                                    <i class="icon icon-file"></i>
+                                    <div class="contract-number d-flex flex-column">
+                                        <span>1232343545545</span>
+                                        <small>Номер договора</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="contacts-copy">
+                                <i class="icon icon-copy"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exit-profile-name">
+                        <div class="exit-profile d-flex align-items-center">
+                            <i class="icon icon-log-out"></i>
+                            <span>Выход</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="personal-table personal-table-fuel">
+            <div class="table-title">
+                <h2>Название таблицы</h2>
+
+                <div class="row g-0 sales-contracts align-items-center">
+
+                    <button type="button" class="col-auto open-filter-mob btn" data-bs-toggle="modal" data-bs-target="#filter-settings">
+                        <i class="icon icon-settings"></i>
+                    </button>
+
+                    <div class="col-auto all-contracts dropdown">
+                        <button type="button" class="btn btn-contracts" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            Выберите группу
+                        </button>
+                        <div class="all-contracts-drop dropdown-menu">
+                            <div class="table-search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Поиск">
+                                    <span class="input-group-text"><i class="icon icon-search"></i></span>
+
+                                </div>
+                            </div>
+                            <ul class="all-contracts-menu list-group list-group-flush">
+                                <li class="list-group-item list-group-item-action">Тест 1</li>
+                                <li class="list-group-item list-group-item-action">Тест 2</li>
+                                <li class="list-group-item list-group-item-action">Тест 3</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-auto all-contracts dropdown">
+                        <button type="button" class="btn btn-contracts" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            Выберите договор
+                        </button>
+                        <div class="all-contracts-drop dropdown-menu">
+                            <div class="table-search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Поиск">
+                                    <span class="input-group-text"><i class="icon icon-search"></i></span>
+                                </div>
+                            </div>
+                            <ul class="all-contracts-menu list-group list-group-flush">
+                                <li class="list-group-item list-group-item-action">Б/Н</li>
+                                <li class="list-group-item list-group-item-action">М/Н</li>
+                                <li class="list-group-item list-group-item-action">Все договоры</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-auto sales-search-cnt d-flex align-items-center">
+                        <div class="sales-search">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="icon icon-search"></i></span>
+                                    <input type="text" class="form-control" placeholder="Поиск">
+                                </div>
+                            </div>
+                        <button class="btn btn-blue card-groups-remove">Применить</button>
+                        <button class="btn btn-blue add-plus d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#change-card"> <i class="icon icon-plus"></i> <span>Добавить</span></button>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="table-fuel-cards table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="table-col-checkbox"></th>
+                            <th>Номер</th>
+                            <th>Статус</th>
+                            <th>ПИН</th>
+                            <th>Владелец</th>
+                            <th>Номерной знак</th>
+                            <th>Примечание</th>
+                            <th>Группа</th>
+                            <th class="text-end">Действия</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" aria-label="Выбрать строку">
+                                </div>
+                            </td>
+                            <td>
+                                ******123456789
+                            </td>
+                            <td><span class="in-progress">В работе</span></td>
+                            <td></td>
+                            <td></td>
+                            <td>Полехин №1</td>
+                            <td>Роснефть</td>
+                            <td></td>
+                            <td>
+                                <div class="users-table-btn d-flex align-items-center justify-content-end">
+                                    <button class="btn btn-edit d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#card-details"><i class="icon icon-edit"></i></button>
+                                    <button class="btn btn-settings d-flex align-items-center justify-content-center"><i class="icon icon-settings"></i></button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" aria-label="Выбрать строку">
+                                </div>
+                            </td>
+                            <td>
+                                ******123456789
+                            </td>
+                            <td><span class="tab-active d-flex align-items-center justify-content-center">Активна</span></td>
+                            <td></td>
+                            <td></td>
+                            <td>Полехин №1</td>
+                            <td>Роснефть</td>
+                            <td></td>
+                            <td>
+                                <div class="users-table-btn d-flex align-items-center justify-content-end">
+                                    <button class="btn btn-edit d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#card-details"><i class="icon icon-edit"></i></button>
+                                    <button class="btn btn-settings d-flex align-items-center justify-content-center"><i class="icon icon-settings"></i></button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" aria-label="Выбрать строку">
+                                </div>
+                            </td>
+                            <td>
+                                ******123456789
+                            </td>
+                            <td>
+                                <div class="tab-blocked d-flex align-items-center">
+                                    <span>Заблокирована</span>
+                                    <div class="tab-blocked-info">
+                                        <i class="icon help-circle"></i>
+                                        <div class="tab-blocked-text">
+                                            <p>
+                                                Заблокирована не  сотрудником Ликард
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>Полехин №1</td>
+                            <td>Роснефть</td>
+                            <td></td>
+                            <td>
+                                <div class="users-table-btn d-flex align-items-center justify-content-end">
+                                    <button class="btn btn-edit d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#card-details"><i class="icon icon-edit"></i></button>
+                                    <button class="btn btn-settings d-flex align-items-center justify-content-center"><i class="icon icon-settings"></i></button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" aria-label="Выбрать строку">
+                                </div>
+                            </td>
+                            <td>
+                                ******123456789
+                            </td>
+                            <td><span class="in-progress">В работе</span></td>
+                            <td></td>
+                            <td></td>
+                            <td>Полехин №1</td>
+                            <td>Роснефть</td>
+                            <td></td>
+                            <td>
+                                <div class="users-table-btn d-flex align-items-center justify-content-end">
+                                    <button class="btn btn-edit d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#card-details"><i class="icon icon-edit"></i></button>
+                                    <button class="btn btn-settings d-flex align-items-center justify-content-center"><i class="icon icon-settings"></i></button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" aria-label="Выбрать строку">
+                                </div>
+                            </td>
+                            <td>
+                                ******123456789
+                            </td>
+                            <td><span class="in-progress">В работе</span></td>
+                            <td></td>
+                            <td></td>
+                            <td>Полехин №1</td>
+                            <td>Роснефть</td>
+                            <td></td>
+                            <td>
+                                <div class="users-table-btn d-flex align-items-center justify-content-end">
+                                    <button class="btn btn-edit d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#card-details"><i class="icon icon-edit"></i></button>
+                                    <button class="btn btn-settings d-flex align-items-center justify-content-center"><i class="icon icon-settings"></i></button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" aria-label="Выбрать строку">
+                                </div>
+                            </td>
+                            <td>
+                                ******123456789
+                            </td>
+                            <td><span class="in-progress">В работе</span></td>
+                            <td></td>
+                            <td></td>
+                            <td>Полехин №1</td>
+                            <td>Роснефть</td>
+                            <td></td>
+                            <td>
+                                <div class="users-table-btn d-flex align-items-center justify-content-end">
+                                    <button class="btn btn-edit d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#card-details"><i class="icon icon-edit"></i></button>
+                                    <button class="btn btn-settings d-flex align-items-center justify-content-center"><i class="icon icon-settings"></i></button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" aria-label="Выбрать строку">
+                                </div>
+                            </td>
+                            <td>
+                                ******123456789
+                            </td>
+                            <td><span class="in-progress">В работе</span></td>
+                            <td></td>
+                            <td></td>
+                            <td>Полехин №1</td>
+                            <td>Роснефть</td>
+                            <td></td>
+                            <td>
+                                <div class="users-table-btn d-flex align-items-center justify-content-end">
+                                    <button class="btn btn-edit d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#card-details"><i class="icon icon-edit"></i></button>
+                                    <button class="btn btn-settings d-flex align-items-center justify-content-center"><i class="icon icon-settings"></i></button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            <nav class="pagination-pages d-flex align-items-center justify-content-between" aria-label="Table pages">
+                <div class="pag-arrow-left d-flex align-items-center">
+                    <i class="icon arrow-left"></i>
+                    <span>Предыдущая</span>
+                </div>
+                <ul class="pagination pagination-href">
+                    <li class="page-item pagination-active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">8</a></li>
+                    <li class="page-item"><a class="page-link" href="#">9</a></li>
+                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                </ul>
+                <a href="#" class="pagination-mobile">
+                    Page 1 of 10
+                </a>
+                <div class="pag-arrow-right d-flex align-items-center">
+                    <span>Следующая</span>
+                    <i class="icon arrow-right"></i>
+                </div>
+            </nav>
+        </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<div id="change-card" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content change-card-mod">
+            <div class="modal-header modal-form-title">
+                <h2>Изменить группу карт</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="group-for-cards">
+                <h3>Новая группа для карт</h3>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-contracts" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        Выберите группу
+                    </button>
+                    <div class="all-contracts-drop dropdown-menu">
+                        <div class="table-search">
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="icon icon-search"></i></span>
+                                <input type="text" class="form-control" placeholder="Поиск">
+                            </div>
+                        </div>
+                        <ul class="all-contracts-menu list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action">Тест 1</li>
+                            <li class="list-group-item list-group-item-action">Тест 2</li>
+                            <li class="list-group-item list-group-item-action">Тест 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="change-card-cnt">
+                <div class="change-card-tab">
+                    <div class="change-card-head">
+                        <ul class="d-flex align-items-center">
+                            <li>Номер</li>
+                            <li>Владелец</li>
+                            <li>Номерной знак</li>
+                            <li>Группа</li>
+                        </ul>
+                    </div>
+                    <div class="change-card-body">
+                        <ul class="d-flex align-items-center">
+                            <li>
+                                <span>*****12345667675</span>
+                                <small>Номер</small>
+                            </li>
+                            <li>
+                                <span>Петров Васечка</span>
+                                <small>Владелец</small>
+                            </li>
+                            <li>
+                                <span></span>
+                                <small>Номерной знак</small>
+                            </li>
+                            <li>
+                                <span></span>
+                                <small>Группа</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="modal-footer editing-group-btn d-flex align-items-center justify-content-end">
+                <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-blue">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="card-details" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content card-details-mod">
+            <div class="modal-header modal-form-title">
+                <h2>Изменить данные карты</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body editing-groups">
+                <div class="editing-groups-inp">
+                    <label for="cardOwner" class="form-label">Владелец</label>
+                    <input type="text" class="form-control" id="cardOwner">
+                </div>
+                <div class="editing-groups-inp">
+                    <label for="cardEditName" class="form-label">Номерной знак</label>
+                    <input type="text" class="form-control" id="cardEditName">
+                </div>
+                <div class="editing-groups-inp">
+                    <label for="cardEditDescription" class="form-label">Описание</label>
+                    <input type="text" class="form-control" id="cardEditDescription">
+                </div>
+
+                <div class="card-details-cnt d-flex flex-column">
+                    <div class="card-details-name">
+                         <p>Номер карты</p>
+                        <span>******12429473457439</span>
+                    </div>
+                    <div class="card-details-name">
+                         <p>Идентификатор</p>
+                        <span>7439</span>
+                    </div>
+                    <div class="card-details-name">
+                         <p>Владелец</p>
+                        <span>Петя Васекин</span>
+                    </div>
+                    <div class="card-details-name">
+                         <p>Номер знак</p>
+                        <span></span>
+                    </div>
+                    <div class="card-details-name">
+                         <p>Описание</p>
+                        <span>Роснефть</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer editing-group-btn d-flex align-items-center justify-content-end">
+                <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-blue">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="filter-settings" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header modal-form-title d-flex align-items-center justify-content-between">
+                <h2>Фильтры</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body select-contract-cnt">
+                <h3>Выбрать договор</h3>
+                <div class="select-contract-box">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="filterCheck1" checked>
+                        <label class="form-check-label" for="filterCheck1">б/м</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="filterCheck2">
+                        <label class="form-check-label" for="filterCheck2">н/м</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer select-contract-btn d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-blue">Применить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
