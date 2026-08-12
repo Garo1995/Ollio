@@ -1236,6 +1236,7 @@ h2 {
 }
 .table-list tbody tr td strong {
     display: block;
+    color: var(--title-color);
 }
 .table-col-address {
     width: 261px;
