@@ -1304,6 +1304,16 @@ h2 {
     .open-menu .icon-menu {
         background-color: var(--colors-text-secondary-700);
     }
+    .open-menu:hover,
+    .open-menu:focus,
+    .open-menu:active {
+        box-shadow: none !important;
+        border: unset!important;
+    }
+    .open-menu:focus, .open-menu:focus-visible {
+        box-shadow: none !important;
+        border: unset!important;
+    }
     .card-account-mod {
         top: auto!important;
         bottom: 72px;
@@ -2182,6 +2192,13 @@ h2 {
     }
     .add-plus {
         padding: 10px 10px;
+    }
+    .add-plus:hover,
+    .add-plus:active,
+    .card-groups-btn:hover,
+    .card-groups-btn:active{
+        background: var(--utility-blue-light-500) !important;
+        border: 1px solid var(--utility-blue-light-500) !important;
     }
     .group-for-cards {
         padding: 16px;
