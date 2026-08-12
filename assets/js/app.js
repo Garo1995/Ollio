@@ -5,10 +5,14 @@ document.addEventListener('hide.bs.modal', function (event) {
     }
 });
 
-document.querySelector('.click-menu').addEventListener('click', function () {
-    this.classList.toggle('click-menu-act');
-    document.querySelector('.personal-menu').classList.toggle('menu-opened');
-});
+const clickMenuBtn = document.querySelector('.click-menu');
+const personalMenuEl = document.querySelector('.personal-menu');
+if (clickMenuBtn && personalMenuEl) {
+    clickMenuBtn.addEventListener('click', function () {
+        this.classList.toggle('click-menu-act');
+        personalMenuEl.classList.toggle('menu-opened');
+    });
+}
 
 
 const themeToggle = document.getElementById('theme-toggle');
@@ -18,20 +22,16 @@ const root = document.documentElement;
 
 function applyTheme(theme) {
     root.setAttribute('data-bs-theme', theme);
-    if (theme === 'dark') {
-        darkBtn.classList.add('dark-active');
-        lightBtn.classList.remove('light-active');
-    } else {
-        lightBtn.classList.add('light-active');
-        darkBtn.classList.remove('dark-active');
-    }
+    if (darkBtn) darkBtn.classList.toggle('dark-active', theme === 'dark');
+    if (lightBtn) lightBtn.classList.toggle('light-active', theme === 'light');
     localStorage.setItem('theme', theme);
 }
 
-themeToggle.addEventListener('click', () => {
-    applyTheme(root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark');
-});
-
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        applyTheme(root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark');
+    });
+}
 
 applyTheme(localStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
 
@@ -252,27 +252,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-let usersSwiper = new Swiper(".review-slider", {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 16,
-    breakpoints: {
-        '1450': {
-            slidesPerView: 4,
-            spaceBetween: 16,
-        },
-        '1199': {
-            slidesPerView: 3,
-            spaceBetween: 16,
-        },
-        '570': {
-            slidesPerView: 3,
-            spaceBetween: 16,
-        },
-        '320': {
-            slidesPerView: 2,
-            spaceBetween: 16,
-        },
-    }
+if (document.querySelector('.review-slider')) {
+    let usersSwiper = new Swiper(".review-slider", {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 16,
+        breakpoints: {
+            '1450': {
+                slidesPerView: 4,
+                spaceBetween: 16,
+            },
+            '1199': {
+                slidesPerView: 3,
+                spaceBetween: 16,
+            },
+            '570': {
+                slidesPerView: 3,
+                spaceBetween: 16,
+            },
+            '320': {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+        }
 
-});
+    });
+}

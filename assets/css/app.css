@@ -1692,15 +1692,13 @@ h2 {
     height: auto;
     border-top: 1px solid var(--colors-border-secondary);
     flex-direction: row-reverse;
+    margin-top: 0;
 }
 .select-contract-box .form-check:first-child {
     border-top: unset;
 }
 .select-contract-box  .form-check-label {
     width: 100%;
-}
-.select-contract-box .form-check  {
-    margin-top: 0;
 }
 
 .form-check-input:focus {
