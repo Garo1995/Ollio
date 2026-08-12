@@ -1310,10 +1310,7 @@ h2 {
         box-shadow: none !important;
         border: unset!important;
     }
-    .open-menu:focus, .open-menu:focus-visible {
-        box-shadow: none !important;
-        border: unset!important;
-    }
+
     .card-account-mod {
         top: auto!important;
         bottom: 72px;
